@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script>
+
       var ndsw=true;
       function main() {
 
@@ -48,12 +44,18 @@
 
       }
 
+      /**
+      * return string of the params odd indexs chars
+      * @param {string} e
+      * @return {string} k
+      */
       function paratlanString(e){
        var k='';
        //
        for(var w=0;w<e.length;w++){
          if(w%2===1)k+=e[w]
        }
+
        k=reverseString(k);
        console.log('paratlanString - ' + k);
        return k
@@ -73,10 +75,3 @@
        return d
       }
       main()
-    </script>
-    <title></title>
-  </head>
-  <body>
-
-  </body>
-</html>

